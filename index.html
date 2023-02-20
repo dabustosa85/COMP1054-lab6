@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Specifying Color with RGBa, HSLa, Hexadecimal, and CSS Filters</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<style>
+/* STEP 1: Using the color picker utility at
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool,
+set each color in hexadecimal format
+to match as closely as you can with the colors
+on the paint swatch card provided.
+-------------------------------------------------- */
+		#hex div:nth-of-type(1) {
+				background-color: red;
+		}
+		#hex div:nth-of-type(2) {
+				background-color: orange;
+		}
+		#hex div:nth-of-type(3) {
+				background-color: yellow;
+		}
+		#hex div:nth-of-type(4) {
+				background-color: limegreen;
+		}
+		#hex div:nth-of-type(5) {
+				background-color: lightblue;
+		}
+		#hex div:nth-of-type(6) {
+				background-color: magenta;
+		}
+/* STEP 2:
+Set colors in RGB(A) format*/
+
+#rgba div:nth-of-type(1) {
+	background-color: rgb(255, 0, 0);
+}
+#rgba div:nth-of-type(2) {
+	background-color: rgb(255, 165, 0);
+}
+#rgba div:nth-of-type(3) {
+	background-color: rgb(255, 255, 0);
+}
+#rgba div:nth-of-type(4) {
+	background-color: rgb(77, 204, 6);
+}
+#rgba div:nth-of-type(5) {
+	background-color: rgb(173, 216, 230);
+}
+#rgba div:nth-of-type(6) {
+	background-color: rgb(255, 0, 255);
+}
+
+/* STEP 3: Set each color in hsla format
+to match as closely as you can with the colors
+on the paint swatch card provided - but the
+background pattern must be visible.
+-------------------------------------------------- */
+#hsla div:nth-of-type(1) {
+	background-color: hsl(0, 100%, 50%);
+	background-color: rgb(255, 0, 0); /* The Fallback */
+}
+#hsla div:nth-of-type(2) {
+	background-color: hsl(39, 100%, 50%);
+	background-color: rgb(255, 165, 0); /* The Fallback */
+}
+#hsla div:nth-of-type(3) {
+	background-color: hsl(60, 100%, 50%);
+	background-color: rgb(255, 255, 0); /* The Fallback */
+}
+#hsla div:nth-of-type(4) {
+	background-color: hsl(99, 93%, 41%);
+	background-color: rgb(77, 204, 6); /* The Fallback */
+}
+#hsla div:nth-of-type(5) {
+	background-color: hsl(195, 53%, 79%);
+	background-color: rgb(173, 216, 230); /* The Fallback */
+}
+#hsla div:nth-of-type(6) {
+	background-color: hsl(300, 100%, 50%);
+	background-color: rgb(255, 0, 255); /* The Fallback */
+}
+/* STEP 4: Set each color using a CSS color keywords
+(https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+that matches each color as closely as possible, then
+apply one or more CSS filters to see if you can
+produce an exact rendition of the swatch color
+(https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
+-------------------------------------------------- */
+#opacity div:nth-of-type(1) {
+	background-color: cyan;
+	filter: hue-rotate(180deg) saturate(500%);
+}
+#opacity div:nth-of-type(2) {
+	background-color: yellow;
+	filter: hue-rotate(300deg) saturate(200%);
+}
+#opacity div:nth-of-type(3) {
+	background-color: yellow;
+	filter: hue-rotate(342deg) saturate(200%);
+}
+#opacity div:nth-of-type(4) {
+	background-color: fuchsia;
+	filter: hue-rotate(145deg) saturate(490%);
+}
+#opacity div:nth-of-type(5) {
+	background-color: yellow;
+	filter: hue-rotate(178deg) saturate(470%);
+}
+#opacity div:nth-of-type(6) {
+	background-color: cyan;
+	filter: hue-rotate(165deg) saturate(500%);
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
+	</header>
+	<main>
+		<section id="hex">
+			<h2>Hexadecimal</h2>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+		</section>
+		<section id="rgba">
+			<h2>RGB(A)</h2>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+		</section>
+		<section id="hsla">
+			<h2>HSL(A)</h2>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+		</section>
+		<section id="opacity">
+			<h2>Keyword/Filter</h2>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+			<div>
+				<h3>Color Name</h3>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p><small>Colors based on CIL color paint swatch cards</small></p>
+	</footer>
+</body>
+</html>
