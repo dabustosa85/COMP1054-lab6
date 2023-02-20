@@ -1,0 +1,48 @@
+/* Base styles for Lab 7
+-------------------------------------------------- */
+body {
+	background-color: rgb(240,240,240);
+}
+header {
+	padding: 1em;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+main section {
+	width: 20%;
+	padding: 0.5em;
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.1); 
+}
+main section h2 {
+	margin: 0;
+}
+main section h3 {
+	margin: 0;
+	font-size: 75%;
+}
+main section div {
+	margin-top: 0.5em;
+	padding: 0.5em;
+	color: rgb(255,255,255);
+	background-color: grey;
+	height: 3em;
+}
+main section:nth-of-type(3) {
+	/* https://lea.verou.me/css3patterns/ */
+	background-color:gainsboro;
+background-image: 
+	radial-gradient(circle at 100% 150%, gainsboro 24%, white 25%, white 28%, gainsboro 29%, gainsboro 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 0    150%, gainsboro 24%, white 25%, white 28%, gainsboro 29%, gainsboro 36%, white 36%, white 40%, transparent 40%, transparent),
+	radial-gradient(circle at 50%  100%, white 10%, gainsboro 11%, gainsboro 23%, white 24%, white 30%, gainsboro 31%, gainsboro 43%, white 44%, white 50%, gainsboro 51%, gainsboro 63%, white 64%, white 71%, transparent 71%, transparent),
+	radial-gradient(circle at 100% 50%, white 5%, gainsboro 6%, gainsboro 15%, white 16%, white 20%, gainsboro 21%, gainsboro 30%, white 31%, white 35%, gainsboro 36%, gainsboro 45%, white 46%, white 49%, transparent 50%, transparent),
+	radial-gradient(circle at 0    50%, white 5%, gainsboro 6%, gainsboro 15%, white 16%, white 20%, gainsboro 21%, gainsboro 30%, white 31%, white 35%, gainsboro 36%, gainsboro 45%, white 46%, white 49%, transparent 50%, transparent);
+	background-size:100px 50px;
+}
+footer {
+	padding: 1em;
+}
